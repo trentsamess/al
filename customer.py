@@ -8,6 +8,10 @@ class Customer:
         self.budget = budget
         self.expected_duration = expected_duration
 
+    def make_apply(self, company):
+        company.amount_of_applies += 1
+
+    def cancel_project(self,):
 
 class Importance(Enum):
     High = auto()

@@ -15,7 +15,7 @@ class Company:
         self.software = [d.Software() for _ in range(self.software_count)]
         self.hardware = [d.Hardware() for _ in range(self.hardware_count)]
         self.projects = []
-
+        self.amount_of_applies = 0
         empl_queue = deque(self.employees)
         soft_queue = deque(self.software)
         hw_queue = deque(self.hardware)
